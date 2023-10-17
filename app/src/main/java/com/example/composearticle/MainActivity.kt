@@ -37,17 +37,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-@Composable
-fun ComposeArticleApp() {
-    ArticleCard(
-        title = stringResource(R.string.title_jetpack_compose_tutorial),
-        shortDescription = stringResource(R.string.compose_short_desc),
-        longDescription = stringResource(R.string.compose_long_desc),
-        imagePainter = painterResource(R.drawable.bg_compose_background)
-    )
-}
-
 @Composable
 private fun ArticleCard(
     title: String,
@@ -75,6 +64,17 @@ private fun ArticleCard(
         )
     }
 }
+@Composable
+fun ComposeArticleApp() {
+    ArticleCard(
+        title = stringResource(R.string.title_jetpack_compose_tutorial),
+        shortDescription = stringResource(R.string.compose_short_desc),
+        longDescription = stringResource(R.string.compose_long_desc),
+        imagePainter = painterResource(R.drawable.bg_compose_background)
+    )
+}
+
+
 
 @Preview(showBackground = true)
 @Composable
